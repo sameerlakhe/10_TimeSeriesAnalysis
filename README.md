@@ -69,7 +69,7 @@ Use the results of the completed time series analysis and modelling to answer th
 ![GARCH_Results](Images/GARCH_Results.png)
 
 ***Volatility Forecast using GARCH Model***
-![Volatility-Forecast_GARCH](Images/Volatility-Forecast_GARCH)
+![Volatility-Forecast_GARCH](Images/Volatility-Forecast_GARCH.png)
 
 
 
