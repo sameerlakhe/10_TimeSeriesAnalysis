@@ -4,145 +4,56 @@
 
 # Unit 10—A Yen for the Future
 
-![5-DayForecast-ARMA](Images/5-DayForecast-ARMA.png)
-![ARIMA_Results](Images/ARIMA_Results.png)
-![ARMA-Results](Images/ARMA-Results.png)
-![ForecastUsingARIMA](Images/ForecastUsingARIMA.png)
-![GARCH_Results](Images/GARCH_Results.png)
-![NoisePlot](Images/NoisePlot.png)
-![TimeSeriesPlot](Images/TimeSeriesPlot.png)
-![Volatility-Forecast_GARCH](Images/Volatility-Forecast_GARCH)
-
-
-
 1. Plotting the Settle price to check for long or short-term patterns.
    
-    * Do you see any patterns, long-term and/or short?
+    * The overall trend is downwards. There are high periods of volatility during end of the year - begining of next year where there is reversal in trends.
 
 2. Decomposition using a Hodrick-Prescott filter (decompose the settle price into trend and noise).
     
      *  Do you see any patterns, long-term and/or short?
+     *  There is high volatility. But lower highs and lower lows indicate downward trend.
 
 3. Forecasting returns using an ARMA model.
     
     * Based on the p-value, is the model a good fit?
+    *  The p-value for ARMA models is above 0.05 and few values are 0 which is a huge divergence. So its not a good fit
 
 4. Forecasting the exchange rate price using an ARIMA model.
     
     * What does the model forecast will happen to the Japanese Yen in the near term?
+    *  The ARIMA model indicates downwards trend for the Yen. However, the model is not accurate due to p-value higher than 0.05
 
 5. Forecasting volatility with GARCH.
    
     * What does the model forecast will happen to volatility in the near term?
+    *  The GARCH model indicates that volatility will increase. The model is accurate as well as the p-value is lower than 0.05
 
 Use the results of the completed time series analysis and modelling to answer the following questions:
 
 1. Based on your time series analysis, would you buy the yen now?
+***I would not buy the Yen as the trend is downwards***
 2. Is the risk of the yen expected to increase or decrease?
+***The volatility, and hence the risk is expected to increase***
 3. Based on the model evaluation, would you feel confident in using these models for trading?
+***Volatility is good for short term trading, so I would probbaly use puts/short the yen, but maybe by considering additional chart analysis***
 
 #### Linear Regression Forecasting
-
-In this notebook, you will build a Scikit-Learn linear regression model to predict CAD/JPY returns with *lagged* CAD/JPY futures returns and categorical calendar seasonal effects (e.g., day-of-week or week-of-year seasonal effects).
-
-Follow the steps outlined in the regression_analysis starter notebook to complete the following:
-
-1. Data preparation (creating returns and lagged returns, and splitting the data into training and testing data)
-2. Fitting a linear regression model.
-3. Making predictions using the testing data.
-4. Out-of-sample performance.
-5. In-sample performance.
-
-Use the results of the linear regression analysis and modelling to answer the following question:
-
 * Does this model perform better or worse on out-of-sample data compared to in-sample data?
 
-- - -
-
-### Hints and Considerations
-
-* Out-of-sample data is data that the model hasn't seen before (testing data).
-* In-sample data is data that the model was trained on (training data).
-
-- - -
-
-### Submission
-
-* Use the starter Jupyter Notebooks for the time series and regression analyses and host the notebooks on GitHub.
-
-* Include a markdown that summarizes your models and findings and include this report in your GitHub repo.
-
-* Submit the link to your GitHub project to Bootcampspot.
-
----
-
-### Submission
-
-* Create Jupyter Notebooks for the analysis and host the notebooks on GitHub.
-
-* Include a Markdown that summarizes your models and findings and include this report in your GitHub repo.
-
-* Submit the link to your GitHub project to Bootcampspot.
-
-- - -
-
-### Requirements
-
-#### Time Series Forecasting  (20 points)
-
-##### To receive all points, your code must:
-
-* Utilize the Hodrick-Prescott Filter to decompose the settle price into trend and noise. (5 points)
-* Use the ARMA Model to forecast returns. (5 points)
-* Use the ARIMA Model to forecast returns. (5 points)
-* Use the GARCH Model to forecast returns. (5 points)
-#### Time Series Analysis  (15 points)
-
-##### To receive all points, your code must:
-
-* Analyze the yen to decide whether to make a purchase. (5 points)
-* Analyze the risk of the yen. (5 points)
-* Analyze the confidence of models as a basis for trading. (5 points)
-
-#### Linear Regression Forecasting  (30 points)
-
-##### To receive all points, your code must:
-
-* Prepare the data, create returns and lagged returns, then split the data into training and testing sets. (5 points)
-* fit a linear Regression model to the data. (5 points)
-* Make predictions using the testing data. (6 points)
-* Evaluate the out-of-sample performance. (7 points)
-* Evaluate the In-sample performance. (7 points)
-
-#### Linear Regression Analysis  (5 points)
-
-##### To receive all points, your code must:
-
-* Analyze the model performance for out-of-sample and in-sample data and write a conclusion. (5 points)
-
-#### Coding Conventions and Formatting (10 points)
-
-##### To receive all points, your code must:
-
-* Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
-* Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
-* Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-* Use concise logic and creative engineering where possible. (2 points)
-
-#### Deployment and Submission (10 points)
-
-##### To receive all points, you must:
-
-* Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
-* Include appropriate commit messages in your files. (5 points)
-
-#### Code Comments (10 points)
-
-##### To receive all points, your code must:
-
-* Be well commented with concise, relevant notes that other developers can understand. (10 points)
+***The model out-of-sample RMSE is ~0.64 while in-sample RMSE is ~0.84. The RMSE should be lower to indicate a better fit. In this case the model is performing better (low error) on out-of-sample data which is good***
 
 
----
+***Time Series Plot***
+![TimeSeriesPlot](Images/TimeSeriesPlot.png)
 
-© 2021 Trilogy Education Services
+***Noise Plot***
+![NoisePlot](Images/NoisePlot.png)
+![ARMA-Results](Images/ARMA-Results.png)
+![5-DayForecast-ARMA](Images/5-DayForecast-ARMA.png)
+![ARIMA_Results](Images/ARIMA_Results.png)
+![ForecastUsingARIMA](Images/ForecastUsingARIMA.png)
+![GARCH_Results](Images/GARCH_Results.png)
+![Volatility-Forecast_GARCH](Images/Volatility-Forecast_GARCH)
+
+
+
