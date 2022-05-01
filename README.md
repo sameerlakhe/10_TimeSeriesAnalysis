@@ -4,38 +4,16 @@
 
 # Unit 10—A Yen for the Future
 
-![Yen Photo](Images/unit-10-readme-photo.png)
+![5-DayForecast-ARMA](Images/5-DayForecast-ARMA.png)
+![ARIMA_Results](Images/ARIMA_Results.png)
+![ARMA-Results](Images/ARMA-Results.png)
+![ForecastUsingARIMA](Images/ForecastUsingARIMA.png)
+![GARCH_Results](Images/GARCH_Results.png)
+![NoisePlot](Images/NoisePlot.png)
+![TimeSeriesPlot](Images/TimeSeriesPlot.png)
+![Volatility-Forecast_GARCH](Images/Volatility-Forecast_GARCH)
 
-## Background
 
-The financial departments of large companies often have to make foreign currency transactions when doing international business, while hedge funds are also interested in anything that will provide an edge in predicting currency movements. Hence, both are always eager to gain a better understanding of the future direction and risk of various currencies. 
-
-In this assignment, you will test the many time series tools that you have learned in order to predict future movements in the value of the Canadian dollar versus the Japanese yen.
-
-You will gain proficiency in the following tasks:
-
-1. Time series forecasting
-2. Linear regression modelling
-
-- - -
-
-### Files
-
-[Time-Series Starter Notebook](Starter_Code/time_series_analysis.ipynb)
-
-[Linear Regression Starter Notebook](Starter_Code/regression_analysis.ipynb)
-
-[CAD/JPY Data CSV File](Starter_Code/cad_jpy.csv)
-
-- - -
-
-### Instructions
-
-#### Time-Series Forecasting
-
-In this notebook, you will load historical CAD-JPY exchange rate data and apply time series analysis and modelling to determine if there is any predictable behaviour.
-
-Follow the steps outlined in the time series starter notebook to complete the following:
 
 1. Plotting the Settle price to check for long or short-term patterns.
    
