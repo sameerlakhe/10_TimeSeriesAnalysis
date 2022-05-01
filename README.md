@@ -48,11 +48,27 @@ Use the results of the completed time series analysis and modelling to answer th
 
 ***Noise Plot***
 ![NoisePlot](Images/NoisePlot.png)
+
+***ARMA Model Results***
+
 ![ARMA-Results](Images/ARMA-Results.png)
+
+***5 Day Forecast using ARMA model***
 ![5-DayForecast-ARMA](Images/5-DayForecast-ARMA.png)
+
+***ARIMA Model Results***
+
 ![ARIMA_Results](Images/ARIMA_Results.png)
+
+***5 Day Forecast using ARIMA model***
+
 ![ForecastUsingARIMA](Images/ForecastUsingARIMA.png)
+
+***GARCH Model results***
+
 ![GARCH_Results](Images/GARCH_Results.png)
+
+***Volatility Forecast using GARCH Model***
 ![Volatility-Forecast_GARCH](Images/Volatility-Forecast_GARCH)
 
 
