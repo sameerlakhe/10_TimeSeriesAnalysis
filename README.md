@@ -11,7 +11,7 @@
 2. Decomposition using a Hodrick-Prescott filter (decompose the settle price into trend and noise).
     
      *  Do you see any patterns, long-term and/or short?
-     *  There is high volatility. But lower highs and lower lows indicate downward trend.
+     *  There is high volatility. But lower highs and lower lows indicate downward trend and Yen is getting stronger
 
 3. Forecasting returns using an ARMA model.
     
@@ -31,9 +31,11 @@
 Use the results of the completed time series analysis and modelling to answer the following questions:
 
 1. Based on your time series analysis, would you buy the yen now?
-***I would not buy the Yen as the trend is downwards***
+**** The overall trend is downwads i.e Yen is stengthening as compared to CAD, so it might be good to diversify some cash in Yen for longer term i.e the cash that is not needed right away as it is highly volatile and it is possibility that I might have to sell at a loss if I need to cash out of my Yen position***
+   
 2. Is the risk of the yen expected to increase or decrease?
 ***The volatility, and hence the risk is expected to increase***
+
 3. Based on the model evaluation, would you feel confident in using these models for trading?
 ***Volatility is good for short term trading, so I would probbaly use puts/short the yen, but maybe by considering additional chart analysis***
 
